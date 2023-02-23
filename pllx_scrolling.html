@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB FX | Parallax Scrolling</title>
+        <link rel="stylesheet" type="text/css" href="CSS/default.css">
+        <link rel="stylesheet" type="text/css" href="CSS/pllx_scrolling.css">
+    </head>
+
+    <body>
+        <section>
+            <img src="Images/fundo_parallax.jpg" id="bg">
+            <img src="Images/parallax1.png" id="px1">
+            <img src="Images/parallax2.png" id="px2">
+            <img src="Images/parallax3.png" id="px3">
+            <img src="Images/parallax4.png" id="px4">
+            <img src="Images/parallax5.png" id="px5">
+            <img src="Images/parallax6.png" id="px6">
+            <h2 id="title">Parallax Scrolling</h2>
+        </section>
+
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let px1 = document.getElementById("px1");
+            let px2 = document.getElementById("px2");
+            let px3 = document.getElementById("px3");
+            let px4 = document.getElementById("px4");
+            let px5 = document.getElementById("px5");
+            let px6 = document.getElementById("px6");
+            let text = document.getElementById("title");
+        
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                px6.style.top = value * 0.5 + 'px';
+                px5.style.top = value * 0.6 + 'px';
+                px4.style.top = value * 0.7 + 'px';
+                px3.style.top = value * 0.4 + 'px';
+                px2.style.top = value * 0.4 + 'px';
+                px1.style.top = value * 0.1 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+        </script>
+    </body>
+</html>

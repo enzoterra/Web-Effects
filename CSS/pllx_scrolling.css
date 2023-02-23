@@ -1,0 +1,62 @@
+body
+{
+    min-height: 2500px;
+    background: #2f112d;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#title
+{
+    position: relative;
+    color: aliceblue;
+    font-size: 8em;
+    z-index: 1;
+    align-items: center;
+    top: -100px;
+}
+
+#px1
+{
+    z-index: 5;
+}
