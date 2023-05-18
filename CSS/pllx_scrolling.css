@@ -53,7 +53,7 @@ section img
     font-size: 8em;
     z-index: 1;
     align-items: center;
-    top: -100px;
+    text-shadow: 1px 1px 70px black;
 }
 
 #px1

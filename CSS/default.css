@@ -9,3 +9,38 @@ body
 {
     background: #e0e0e0;
 }
+
+h1, h2, h3, p
+{
+    color: rgb(245, 245, 245);
+}
+
+#pre-title
+{
+    padding: 5vw;
+    text-align: center;
+    font-size: 2.6vw;
+}
+
+#main-title
+{
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.description
+{
+    padding: 0vw 5vw 0vw 5vw;
+    position: relative;
+    align-items: center;
+    top: 15vw;
+}
+
+.d-text
+{
+    display: flex;
+    position: relative;
+    top: 5vw;
+}
