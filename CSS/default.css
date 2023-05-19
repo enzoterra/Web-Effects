@@ -8,6 +8,7 @@
 body
 {
     background: #e0e0e0;
+    line-height: 1.8em;
 }
 
 h1, h2, h3, p
@@ -38,10 +39,30 @@ h1, h2, h3, p
     top: 15vw;
 }
 
+.d-title
+{
+    padding: 0px 0px 3vw 0px;
+}
+
 .d-text
 {
     display: flex;
     position: relative;
     top: 5vw;
     font-size: 1.6vw;
+    letter-spacing: 2px;
+}
+
+.d-text p
+{
+    padding-right: 6vw;
+    position: relative;
+    text-indent: 1.4em;
+    padding-top: 1.7vw;
+}
+
+.block-d-text
+{
+    display: table-cell;
+    vertical-align: middle;
 }

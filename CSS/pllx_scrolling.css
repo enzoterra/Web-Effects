@@ -2,6 +2,7 @@ body
 {
     min-height: 2500px;
     background: #2f112d;
+    background: linear-gradient(180deg, #2f112d, #2f112d, rgb(22, 22, 22), rgb(22, 22, 22));
 }
 
 section
@@ -48,15 +49,23 @@ section img
 
 #title
 {
+    width: 100%;
     position: relative;
     color: aliceblue;
     font-size: 8em;
     z-index: 1;
     align-items: center;
+    text-align: center;
     text-shadow: 1px 1px 70px black;
+    line-height: 18vw;
 }
 
 #px1
 {
     z-index: 5;
 }
+
+/*.description
+{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(22, 22, 22));
+}*/
