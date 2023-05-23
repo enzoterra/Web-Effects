@@ -1,8 +1,13 @@
 body
 {
-    min-height: 2500px;
+    /*min-height: 2500px;*/
     background: #2f112d;
     background: linear-gradient(180deg, #2f112d, #2f112d, rgb(22, 22, 22), rgb(22, 22, 22));
+}
+
+header
+{
+    z-index: 1;
 }
 
 section
@@ -45,6 +50,7 @@ section img
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    z-index: 1;
 }
 
 #title
@@ -53,7 +59,7 @@ section img
     position: relative;
     color: aliceblue;
     font-size: 8em;
-    z-index: 1;
+    z-index: 2;
     align-items: center;
     text-align: center;
     text-shadow: 1px 1px 70px black;
@@ -64,8 +70,3 @@ section img
 {
     z-index: 5;
 }
-
-/*.description
-{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(22, 22, 22));
-}*/

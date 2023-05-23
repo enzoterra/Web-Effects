@@ -1,3 +1,9 @@
+:root
+{
+    --main-color: rgb(30, 30, 30);
+    --white-text: rgb(245, 245, 245);
+}
+
 *
 {
     margin: 0;
@@ -13,7 +19,32 @@ body
 
 h1, h2, h3, p
 {
-    color: rgb(245, 245, 245);
+    color: var(--white-text);
+}
+
+header
+{
+    width: 100%;
+    /*background-color: var(--main-color);*/
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+}
+
+header h2
+{
+    top: 16px;
+    position: relative;
+}
+
+header img
+{
+    position: absolute;
+    max-height: 30px;
+    width: auto;
+    left: 30px;
+    top: 15px;
 }
 
 #pre-title
@@ -36,25 +67,28 @@ h1, h2, h3, p
     padding: 0vw 5vw 0vw 5vw;
     position: relative;
     align-items: center;
-    top: 15vw;
+    padding-top: 15vw;
+    scroll-behavior: smooth;
 }
 
 .d-title
 {
     padding: 0px 0px 3vw 0px;
+    text-indent: 0.8em;
 }
 
 .d-text
 {
     display: flex;
     position: relative;
-    top: 5vw;
+    padding-top: 5vw;
     font-size: 1.6vw;
     letter-spacing: 2px;
 }
 
 .d-text p
 {
+    max-width: 80%;
     padding-right: 6vw;
     position: relative;
     text-indent: 1.4em;
@@ -65,4 +99,124 @@ h1, h2, h3, p
 {
     display: table-cell;
     vertical-align: middle;
+}
+
+footer
+{
+    padding: 15vw 0 0 0;
+    color: var(--white-text);
+    text-align: center;
+    font-size: 1vw;
+}
+
+#div-footer{
+    background-color: var(--main-color);
+    padding: 4vh;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.div-div-footer
+{
+    padding: 0 10vw 0 10vw;
+    width: 50%;
+}
+
+#icons-footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons-footer div p
+{
+    padding: 1.4vw 0 0 0;
+}
+
+#icons img
+{
+    width: 2vw;
+    padding: 1vw;
+}
+
+@media (orientation: landscape)
+{
+    .block-d-img
+    {
+        max-width: 60%;
+        min-width: 50%;
+    }
+
+    .block-d-img img
+    {
+        max-width: 100%;
+    }
+}
+
+@media (orientation: portrait)
+{
+    #pre-title
+    {
+        padding: 5vw;
+        padding-top: 5vh;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .description
+    {
+        padding: 0 3vh 0 3vh;
+        padding-top: 10vh;
+    }
+
+    .d-text
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 5vw;
+        font-size: 1.6vw;
+        letter-spacing: 3px;
+        line-height: 2em;
+    }
+
+    .d-title
+    {
+        font-size: 2vw;
+    }
+
+    .block-d-img
+    {
+        text-align: center;
+        padding-top: 10vw;
+    }
+
+    .block-d-img img
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        padding: 30vw 0 0 0;
+        font-size: 3vw;
+    }
+
+    .div-div-footer
+    {
+        padding: 0 7vw 0 7vw;
+    }
+
+    #ddf1
+    {
+        width: 100%;
+        text-align: left;
+    }
+
+    #ddf2
+    {
+        width: 40%;
+    }
 }
