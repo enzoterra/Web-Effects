@@ -1,0 +1,69 @@
+section
+{
+    position: relative;
+    width: 100%;
+}
+
+.waves
+{
+    position: relative;
+}
+
+.wave
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../Images/Waves/Wave.png);
+    background-size: 1000px 100px;
+}
+
+#wave1
+{
+    opacity: 1;
+    bottom: 0;
+    z-index: 10;
+    animation: wave 4s linear infinite;
+}
+
+#wave2
+{
+    opacity: 0.5;
+    bottom: 10px;
+    z-index: 9;
+    animation: wave 4s linear reverse infinite;
+}
+
+#wave3
+{
+    opacity: 0.2;
+    bottom: 15px;
+    z-index: 8;
+    animation: wave 2s linear infinite;
+}
+
+#wave4
+{
+    opacity: 0.7;
+    bottom: 20px;
+    z-index: 9;
+    animation: wave 2s linear reverse infinite;
+}
+
+.island
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    bottom: 0;
+    pointer-events: none;
+}
+
+@keyframes wave 
+{
+    0% { background-position-x: 1000px; }
+    100% { background-position-x: 0px; } 
+}
