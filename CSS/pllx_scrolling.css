@@ -5,10 +5,10 @@ body
     background: linear-gradient(180deg, #2f112d, #2f112d, rgb(22, 22, 22), rgb(22, 22, 22));
 }
 
-header
+/*header
 {
     z-index: 1;
-}
+}*/
 
 section
 {

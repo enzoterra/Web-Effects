@@ -1,7 +1,43 @@
 :root
 {
-    --main-color: rgb(30, 30, 30);
+    --main-color: rgb(24, 24, 24);
     --white-text: rgb(245, 245, 245);
+    --border1: linear-gradient(90deg, #f313e4, #871bcf, #088bd6);
+    --border2: linear-gradient(90deg, #871bcf, #088bd6, #f313e4);
+    --border3: linear-gradient(90deg, #088bd6, #f313e4, #871bcf);
+    --border-pink: #f313e4;
+    --border-purple: #871bcf;
+    --border-blue: #088bd6;
+}
+
+@font-face {
+    font-family: FontTitle;
+    src: url(../Fonts/Neonderthaw-Regular.ttf);
+}
+
+@keyframes neon
+{
+    0% { background-color: var(--border-purple); }
+
+    50% { background-color: var(--border-blue); }
+
+    70% { background-color: var(--border-pink); }
+
+    100% { background-color: var(--border-purple);}
+}
+
+@keyframes fade-in
+{
+    0% { opacity: 0; }
+
+    100% { opacity: 1;}
+}
+
+@keyframes fade-out
+{
+    0% { opacity: 1; }
+
+    100% { opacity: 0;}
 }
 
 *
@@ -25,7 +61,6 @@ h1, h2, h3, p
 header
 {
     width: 100%;
-    /*background-color: var(--main-color);*/
     height: 60px;
     text-align: center;
     position: fixed;
@@ -36,6 +71,8 @@ header h2
 {
     top: 16px;
     position: relative;
+    font-family: FontTitle;
+    letter-spacing: 0.3em;
 }
 
 header img
@@ -44,7 +81,17 @@ header img
     max-height: 30px;
     width: auto;
     left: 30px;
-    top: 15px;
+    top: 17px;
+    fill: white;
+}
+
+#neon
+{
+    display: none;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    top: 30px;
 }
 
 #pre-title
@@ -115,6 +162,7 @@ footer
     bottom: 0;
     display: flex;
     align-items: center;
+    box-shadow: 1px 0px 2px black;
 }
 
 .div-div-footer
