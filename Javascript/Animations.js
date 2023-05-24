@@ -12,7 +12,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll > 700) {
-        $('#header').css('background-color','rgba(0, 0, 0, 0.2)');
+        $('#header').css('background-color','rgba(0, 0, 0, 0.5)');
         $('#header').css('backdrop-filter','blur(20px)');
         $('#header').css('box-shadow','1px 0px 3px');
         $('#neon').css('display','block');
