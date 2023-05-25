@@ -1,7 +1,7 @@
 :root
 {
     --main-color: rgb(24, 24, 24);
-    --white-text: rgb(245, 245, 245);
+    --white-text: aliceblue;
     --border1: linear-gradient(90deg, #f313e4, #871bcf, #088bd6);
     --border2: linear-gradient(90deg, #871bcf, #088bd6, #f313e4);
     --border3: linear-gradient(90deg, #088bd6, #f313e4, #871bcf);
@@ -49,8 +49,9 @@
 
 body
 {
-    background: #e0e0e0;
+    background: #1d1d22;
     line-height: 1.8em;
+    color: var(--white-text);
 }
 
 h1, h2, h3, p
@@ -70,12 +71,16 @@ header
     z-index: 10;
 }
 
-header h2
+header a
 {
     top: 16px;
+    font-size: 1.4em;
     position: relative;
     font-family: FontTitle;
     letter-spacing: 0.3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white-text);
 }
 
 header img
@@ -163,7 +168,6 @@ header img
 footer
 {
     padding: 15vw 0 0 0;
-    color: var(--white-text);
     text-align: center;
     font-size: 1vw;
 }
